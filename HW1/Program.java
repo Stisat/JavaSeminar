@@ -109,7 +109,7 @@ public class Program {
                 System.out.printf("Результат: %.2f\n", a/b);
             }
     }
-       static void calcChoise(){
+    static void calcChoise(){
         System.out.println("Добро пожаловать в примитивный калькулятор ;) ");
         boolean f = true;
         while(f){
