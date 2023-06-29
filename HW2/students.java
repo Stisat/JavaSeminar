@@ -33,7 +33,7 @@ public class students {
                 try{
                     logFile = new File("logBubble.txt");
                     fileWriter = new FileWriter(logFile);
-                    int[] unsortArr = new int[] {12, 3, 5, 11, 23, 65, 1, 15, 78, 4, 7};
+                    int[] unsortArr = new int[] {12, 3, 5, 11, 23, 65, 1, 15, 78, 4, 7, 6};
                     System.out.println("Дан несортированный массив:");
                     System.out.println(printArr(unsortArr));
                     System.out.println();
@@ -70,7 +70,7 @@ public class students {
     static int[] sortArrBubble(int[] arr){
         try{
             int temp = 0;
-            for (int i = 0; i < arr.length-1; i++) {
+            for (int i = 0; i < arr.length/2+1; i++) {
                 for (int j = arr.length-1; j>i; j--) {
                     if (arr[j-1]>arr[j]){
                         temp = arr[j-1];
