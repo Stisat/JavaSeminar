@@ -25,7 +25,7 @@ public class Program {
                     int sizeArr = random.nextInt(16)+5;
                     System.out.println("Размер списка (от 5 до 20): "+sizeArr);
                     ArrayList<Integer> array1 = getArraylist(sizeArr);
-                    System.err.println("Созданный список: "+array1);
+                    System.out.println("Созданный список: "+array1);
                     getSortArray(array1);
                     break;
                 case 0:
