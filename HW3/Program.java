@@ -27,6 +27,7 @@ public class Program {
                     ArrayList<Integer> array1 = getArraylist(sizeArr);
                     System.out.println("Созданный список: "+array1);
                     getSortArray(array1);
+                    delNum(array1);
                     break;
                 case 0:
                     System.out.println("Завершение работы!");
@@ -55,8 +56,18 @@ public class Program {
         for (Integer elem : col) {
             sum = sum+elem;
         }
-        System.out.printf("Среднее значение в списке: %.2f\n1", sum/col.size());
+        System.out.printf("Среднее значение в списке: %.2f\n", sum/col.size());
                 
+    }
+    static void delNum (ArrayList<Integer> col){
+        ArrayList<Integer> tempcol = new ArrayList<>();;
+        for (Integer elem : col) {
+            if (elem%2!=0){
+                tempcol.add(elem);
+            }
+        }
+        System.out.println("Список без четных чисел: "+tempcol);
+        
     }
      
 }
